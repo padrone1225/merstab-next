@@ -33,7 +33,7 @@ const GradientButton = ({
         <>
           {color ? (
             <div
-              className={`bg-main-gradient rounded-[5px] tracking-[1px] flex items-center justify-center hover:shadow-primary active:bg-shadow-gradient active:shadow-secondary focus:shadow-focus1 ${padingStyle} ${buttonStyle}`}
+              className={`bg-main-gradient rounded-[5px] tracking-[1px] flex items-center justify-center hover:shadow-primary active:bg-shadow-gradient active:shadow-secondary focus:shadow-focus1 cursor-pointer ${padingStyle} ${buttonStyle}`}
             >
               <h5 className="font-body text-white">{title}</h5>
             </div>
@@ -45,14 +45,14 @@ const GradientButton = ({
         <>
           {color ? (
             <div
-              className={`w-fit py-4 bg-main-gradient flex items-center justify-between rounded-[5px] tracking-[1px] hover:shadow-primary active:bg-shadow-gradient active:shadow-secondary focus:shadow-focus1 ${padingStyle}`}
+              className={`w-fit py-4 bg-main-gradient flex items-center justify-between rounded-[5px] tracking-[1px] hover:shadow-primary active:bg-shadow-gradient active:shadow-secondary focus:shadow-focus1 cursor-pointer ${padingStyle}`}
             >
               {icon ? <div className="mr-3">{icon}</div> : <></>}
               <h5 className="font-body text-white">{title}</h5>
             </div>
           ) : (
             <div
-              className={`w-fit py-4 bg-transparent flex items-center justify-between rounded-[5px] tracking-[1px] hover:shadow-primary hover:bg-main-gradient active:bg-main-gradient active:shadow-secondary focus:shadow-focus border-[#9747FF] border-solid border-2 ${padingStyle}`}
+              className={`w-fit py-4 bg-transparent flex items-center justify-between rounded-[5px] tracking-[1px] hover:shadow-primary hover:bg-main-gradient active:bg-main-gradient active:shadow-secondary focus:shadow-focus border-[#9747FF] border-solid border-2 cursor-pointer ${padingStyle}`}
             >
               {icon ? <div className="pr-3">{icon}</div> : <></>}
               <h5 className="font-body text-white">{title}</h5>
